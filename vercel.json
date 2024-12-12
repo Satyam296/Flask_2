@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "builds": [
+        { "src": "speech_to_text.py", "use": "@vercel/python" }
+    ],
+    "routes": [
+        { "src": "/(.*)", "dest": "speech_to_text.py" }
+    ]
+}
